@@ -397,7 +397,7 @@ with tab6:
     st.dataframe(ss.style.format({
         "Customers": "{:,}", "Avg_Recency": "{:.0f} days", "Avg_Frequency": "{:.1f}",
         "Avg_Monetary": "INR {:,.0f}", "Total_Revenue": "INR {:,.0f}",
-    }).background_gradient(cmap="RdYlGn", subset=["Avg_Monetary", "Total_Revenue"]), use_container_width=True)
+    }), use_container_width=True)
 
     st.subheader("Segment Recommendations")
     with st.expander("Champions & Loyal Customers"):
